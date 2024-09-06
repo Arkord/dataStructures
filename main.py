@@ -32,3 +32,9 @@ stack.pop()  # Output: Stack is empty
 
 # Check the top element of an empty stack
 stack.top()  # Output: Stack is empty
+
+from credit import CreditCard
+
+credit = CreditCard('Octavio', 'Banorte', '5391 0375 9387 5309', 100000)
+
+f = 0

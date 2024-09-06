@@ -1,6 +1,6 @@
 class CreditCard:
 
-    def init (self, customer, bank, acnt, limit):
+    def __init__(self, customer, bank, acnt, limit):
         """Create a new credit card instance.
 
         The initial balance is zero.
@@ -41,13 +41,13 @@ class CreditCard:
 
         Return True if charge was processed; False if charge was denied.
         """
-        if price + self. balance > self. limit: # if charge would exceed limit,
+        if price + self._balance > self._limit: # if charge would exceed limit,
             print('cannot accept charge')
             return False 
         else:
-            self. balance += price
+            self._balance += price
             return True
 
     def make_payment(self, amount):
         """Process customer payment that reduces balance."""
-        self. balance -= amount
+        self._balance -= amount
